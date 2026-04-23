@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h2>💰 Crypto</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Markets</li>
+      <li>Portfolio</li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <h1>Dashboard</h1>
+
+    <div class="cards">
+      <div class="card" id="btc"></div>
+      <div class="card" id="eth"></div>
+      <div class="card" id="sol"></div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Coin</th>
+          <th>Price (USD)</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+    <canvas id="chart"></canvas>
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
